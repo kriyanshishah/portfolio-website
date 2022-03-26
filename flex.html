@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<title>Document</title>
+		<style>
+			.box {
+				width: 250px;
+				height: 250px;
+				border: 1px solid red;
+			}
+
+			.row-fixed {
+				display: flex;
+				flex-direction: row;
+				border: 2px dashed green;
+			}
+
+			.row-flexible {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				border: 2px dashed green;
+			}
+
+			.column-fixed {
+				display: flex;
+				flex-direction: column;
+				border: 2px dashed green;
+			}
+
+			.column-flexible {
+				display: flex;
+				height: 600px;
+				border: 2px dashed green;
+				flex-direction: column;
+				flex-wrap: wrap;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CSS Flex Model</h1>
+
+		<h2>Fixed row</h2>
+		<div class="row-fixed">
+			<div class="box">1</div>
+			<div class="box">2</div>
+			<div class="box">3</div>
+			<div class="box">4</div>
+			<div class="box">5</div>
+		</div>
+		<hr />
+
+		<h2>Flexible row</h2>
+		<div class="row-flexible">
+			<div class="box">1</div>
+			<div class="box">2</div>
+			<div class="box">3</div>
+			<div class="box">4</div>
+			<div class="box">5</div>
+		</div>
+		<hr />
+
+		<h2>Fixed column</h2>
+		<div class="column-fixed">
+			<div class="box">1</div>
+			<div class="box">2</div>
+			<div class="box">3</div>
+			<div class="box">4</div>
+			<div class="box">5</div>
+		</div>
+		<hr />
+
+		<h2>Flexible column</h2>
+		<div class="column-flexible">
+			<div class="box">1</div>
+			<div class="box">2</div>
+			<div class="box">3</div>
+			<div class="box">4</div>
+			<div class="box">5</div>
+		</div>
+	</body>
+</html>
