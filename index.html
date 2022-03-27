@@ -1,105 +1,50 @@
 <html>
 	<head>
-		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+		<!-- font libraries -->
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,100;1,300;1,400;1,800&display=swap"
 			rel="stylesheet"
 		/>
+
+		<!-- fontawesome (for icons) -->
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
 			integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="project.css" />
-		<title>Phoenix Club | Personal Portfolio</title>
+
+		<!-- I am importing style.css [lastbencher-left-side] -->
+		<link rel="stylesheet" href="style.css" />
+		<title>Phoenix club | Portfolio website</title>
 	</head>
 	<body>
-		<nav id="navbar">
-			<a href="#welcome-section" class="nav-links">About</a>
-			<a href="#projects" class="nav-links">Work</a>
-			<a href="#contact" class="nav-links">Contact</a>
-		</nav>
+		<!-- Welcome section -->
+		<div id="welcome-section">
+			<p id="title">Hey I am Phoenix</p>
+			<p id="subtitle">Professional fontend developer</p>
+		</div>
 
-		<section id="welcome-section">
-			<h1 id="welcome-title">Hey, I am Yash</h1>
-			<h3 id="welcome-subtitle">Professional Frontend developer</h3>
-		</section>
+		<!-- Projects section -->
+		<div id="projects-section">
+			<p id="projects-title">These are my projects</p>
+			<hr id="project-hr" />
 
-		<div id="projects">
-			<h2 id="projects-title">These are some of my projects</h2>
-			<hr />
-
-			<div id="projects-grid">
-				<div class="project-tile">
-					<img src="image-1.jpg" alt="Tribute Page" class="project-image" />
-					<a class="project-link" href="#">Tribute Page</a>
+			<div id="project-flex">
+				<div class="project-box">
+					<img class="project-image" src="images/image-1.jpg" />
+					<div class="project-image-title">Title 1</div>
 				</div>
-
-				<div class="project-tile">
-					<img src="image-2.png" alt="Random Quote Machine" class="project-image" />
-					<a class="project-link" href="#">Random Quote Machine</a>
+				<div class="project-box">
+					<img class="project-image" src="images/image-2.png" />
+					<div class="project-image-title">Title 1</div>
 				</div>
-
-				<div class="project-tile">
-					<img src="image-3.png" alt="Javascript Calculator" class="project-image" />
-					<a class="project-link" href="#">Javascript Calculator</a>
+				<div class="project-box">
+					<img class="project-image" src="images/image-3.png" />
+					<div class="project-image-title">Title 1</div>
 				</div>
 			</div>
 		</div>
-
-		<section id="contact">
-			<header>
-				<h1 id="contact-title">Let's work together...</h1>
-				<br />
-				<table>
-					<tr>
-						<td class="right-align">Your name :</td>
-						<td class="left-align"><input type="text" /></td>
-					</tr>
-					<tr>
-						<td class="right-align">Your email :</td>
-						<td class="left-align"><input type="email" /></td>
-					</tr>
-					<tr>
-						<td class="right-align">Your Query :</td>
-						<td class="left-align">
-							<textarea cols="30" rows="10"></textarea>
-						</td>
-					</tr>
-					<tr>
-						<td class="right-align">Your requirements :</td>
-						<td class="left-align">
-							<input type="radio" id="rd-1" name="requriments" />
-							<label for="rd-1">Within a week</label>
-							<br />
-
-							<input type="radio" id="rd-2" name="requriments" />
-							<label for="rd-2">Within a month</label>
-							<br />
-
-							<input type="radio" id="rd-3" name="requriments" />
-							<label for="rd-3">Within 3 months</label>
-							<br />
-						</td>
-					</tr>
-					<tr>
-						<td class="right-align"><input type="submit" class="btn" /></td>
-						<td class="left-align"><input type="reset" class="btn" /></td>
-					</tr>
-				</table>
-			</header>
-			<footer>
-				<hr id="footer-line" />
-				<div id="profile-link-div">
-					<a href="#" class="profile-link"> <i class="fab fa-facebook-square"></i> Facebook </a>
-					<a href="#" class="profile-link"> <i class="fab fa-github"></i> Github </a>
-					<a href="#" class="profile-link"> <i class="fab fa-twitter"></i> Twitter </a>
-					<a href="#" class="profile-link"> <i class="fas fa-at"></i> Email me </a>
-					<a href="#" class="profile-link"> <i class="fas fa-at"></i> Call me </a>
-				</div>
-			</footer>
-		</section>
 	</body>
 </html>
